@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Customer {
+public class Customer1 {
 
     private String customerName;
     private String customerEmail;
@@ -27,7 +27,7 @@ public class Customer {
     }
 
 
-    Customer(String name,String email,String type,String location ){
+    Customer1(String name,String email,String type,String location ){
         this.customerName=name;
         this.customerEmail=email;
         this.customerType=type;
@@ -37,11 +37,11 @@ public class Customer {
 
 
     void showDetails(){
-        // System.out.println("Customer Details");
-        System.out.println("Name: "+getCustomerName());
-        System.out.println("E-mail: "+getCustomerEmail());
-        System.out.println("Type: "+getCustomerType());
-        System.out.println("Location: "+getCustomerLocation());
+        System.out.println("Customer Details");
+        System.out.println("Name "+getCustomerName());
+        System.out.println("E-mail "+getCustomerEmail());
+        System.out.println("Type "+getCustomerType());
+        System.out.println("Location "+getCustomerLocation());
     }
 
     
@@ -60,7 +60,7 @@ class Maine{                                                // Main is already p
         System.out.println("Enter the location");
         String location=sc.nextLine();
 
-        Customer customer=new Customer(name,email,type,location);
+        Customer1 customer=new Customer1(name,email,type,location);
         customer.showDetails();
         
     }
